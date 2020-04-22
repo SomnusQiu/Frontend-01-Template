@@ -1,0 +1,23 @@
+<script>
+    //第一题
+     var reg1 = /[\d] |^(-?\d+)(\.\d+)?$|(NaN) ｜^[+-]?[\d]+([\.][\d]+)?([Ee][+-]?[\d]+)?$/
+ 
+    //第二题
+    function encoding(val) {
+        let list = val.split("")
+        let str = '';
+        for (let i = 0; i < list.length; i++) {
+            let codeStr = list[i].charCodeAt(0).toString(16);
+            str += '\\x' + codeStr;
+        }
+        return str;
+    }
+    console.log(encoding('winter is coming 中'))
+
+    //第三题
+    var reg3=  /^(("([^"]|\")*")|('([^']|\')*'))$/
+  
+
+  console.log(reg3.test("'AA'"))
+    
+</script>
