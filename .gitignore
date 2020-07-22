@@ -2,3 +2,4 @@
 .idea
 .history/
 node_modules/
+/dist/
